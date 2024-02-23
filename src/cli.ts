@@ -7,7 +7,7 @@ const templateRoot = resolve(__dirname, '..', 'templates');
 
 // See https://github.com/uetchy/create-create-app/blob/master/README.md for other options.
 
-create('create-soa-templates', {
+create('create-soa-showcase', {
   templateRoot,
   extra: {
     framework: {
