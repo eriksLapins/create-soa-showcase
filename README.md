@@ -1,4 +1,4 @@
-# Create Soa Templates
+# Create Soa Showcase
 
 generate showcase for soa-showcase from templates
 
