@@ -1,8 +1,8 @@
 {
-  "name": "create-soa-templates",
-  "description": "templates for soa-showcase",
+  "name": "create-soa-showcase",
+  "description": "generate showcase for soa-showcase from templates",
   "version": "1.0.0",
-  "author": "Ēriks Lapiņš <lapinseriks98@gmail.com>",
+  "author": "eriksLapins <lapinseriks98@gmail.com>",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
     "clean": "shx rm -rf lib",

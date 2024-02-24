@@ -1,6 +1,6 @@
 # Create Soa Templates
 
-templates for soa-showcase
+generate showcase for soa-showcase from templates
 
 > created by [create-create-app](https://github.com/uetchy/create-create-app).
 
