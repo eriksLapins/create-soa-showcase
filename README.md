@@ -7,11 +7,11 @@ generate showcase for soa-showcase from templates
 ## Usage
 
 ```bash
-npx create-soa-templates <name>
+npx create-soa-showcase <name>
 ```
 
 ## Usage for cli initiation of project (to skip questions)
 
 ```bash
-npx create-soa-templates <name> --template=<template_name> --node-pm=<package_manager>
+npx create-soa-showcase <name> --template=<template_name> --node-pm=<package_manager>
 ```
