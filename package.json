@@ -1,7 +1,7 @@
 {
   "name": "create-soa-templates",
   "description": "templates for soa-showcase",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Ēriks Lapiņš <lapinseriks98@gmail.com>",
   "scripts": {
     "build": "tsup src/cli.ts --minify",

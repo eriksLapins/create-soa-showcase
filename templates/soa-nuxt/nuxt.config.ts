@@ -5,12 +5,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
     app: {
         head: {
-            title: 'SortofaShowcase {{capital name}}',
+            title: '{{capital name}} | SortofaShowcase',
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
         }
     },
     modules: [
       '@nuxtjs/tailwindcss',
-      '@nuxt/image'
     ],
 })

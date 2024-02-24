@@ -9,24 +9,30 @@ const templateRoot = resolve(__dirname, '..', 'templates');
 
 create('create-soa-showcase', {
   templateRoot,
+  promptForDescription: false,
+  promptForAuthor: false,
+  promptForEmail: false,
+  promptForLicense: false,
+  promptForPackageManager: false,
+  promptForTemplate: false,
   extra: {
     template: {
       type: 'list',
-      default: 'nuxt',
+      default: 'soa-nuxt',
       describe: 'choose your framework',
-      choices: ['nuxt'],
+      choices: ['soa-nuxt'],
       prompt: 'if-no-arg',
     },
-    packageManager: {
+    'node-pm': {
       type: 'list',
       default: 'yarn',
       describe: 'choose your package manager',
-      choices: ['yarn', 'npm', 'pnpm', 'bun'],
+      choices: ['yarn', 'npm', 'pnpm'],
       prompt: 'if-no-arg',
     },
   },
-  after: ({ answers }) => {
-    console.log(`Installing dependencies for ${answers.template} template with ${answers.packageManager}.`);
+  after: ({ answers, template }) => {
+    console.log(`Created project for ${template} template with ${answers['node-pm']}.`);
   },
   caveat: 'Project created',
 });
