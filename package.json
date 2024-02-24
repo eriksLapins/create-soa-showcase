@@ -3,6 +3,10 @@
   "description": "generate showcase for soa-showcase from templates",
   "version": "1.0.1",
   "author": "eriksLapins <lapinseriks98@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eriksLapins/create-soa-showcase.git"
+  },
   "scripts": {
     "build": "tsup src/cli.ts --minify",
     "clean": "shx rm -rf lib",
