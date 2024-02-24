@@ -15,6 +15,7 @@ create('create-soa-showcase', {
   promptForLicense: false,
   promptForPackageManager: false,
   promptForTemplate: false,
+  skipGitInit: true,
   extra: {
     template: {
       type: 'list',

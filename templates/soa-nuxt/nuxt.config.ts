@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { resolve } from 'path';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -9,6 +8,17 @@ export default defineNuxtConfig({
           link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
       }
   },
+  components: {
+    dirs: [
+      {
+        path: "~/components/Soa",
+        global: true,
+      }
+    ],
+  },
+  css: [
+    "~/assets/css/app.css",
+  ],
   modules: [
     '@nuxtjs/tailwindcss',
   ],
