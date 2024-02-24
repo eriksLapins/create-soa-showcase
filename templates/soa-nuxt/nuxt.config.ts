@@ -3,13 +3,13 @@ import { resolve } from 'path';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-    app: {
-        head: {
-            title: '{{capital name}} | SortofaShowcase',
-            link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
-        }
-    },
-    modules: [
-      '@nuxtjs/tailwindcss',
-    ],
+  app: {
+      head: {
+          title: '{{capital name}} | SortofaShowcase',
+          link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      }
+  },
+  modules: [
+    '@nuxtjs/tailwindcss',
+  ],
 })
