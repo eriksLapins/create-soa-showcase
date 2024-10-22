@@ -16,6 +16,7 @@ create('create-soa-showcase', {
   promptForPackageManager: false,
   promptForTemplate: false,
   skipGitInit: true,
+  skipNpmInstall: true,
   extra: {
     template: {
       type: 'list',
@@ -32,7 +33,11 @@ create('create-soa-showcase', {
       prompt: 'if-no-arg',
     },
   },
-  after: ({ answers, template }) => {
+  after: ({ answers, template, run, name }) => {
+    console.log(`Running install for ${template} template with ${answers['node-pm']} in ${process.cwd()}/${name}`);
+    run(`${answers['node-pm']} install`, {
+      cwd: `${process.cwd()}/${name}`,
+    });
     console.log(`Created project for ${template} template with ${answers['node-pm']}.`);
   },
   caveat: 'Project created',
